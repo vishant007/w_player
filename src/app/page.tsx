@@ -9,7 +9,7 @@ export default function Home() {
 		<>
 			<div className='flex flex-row justify-between max-h-[87vh]'>
 				<Sidebar />
-				<CorePage name='Vishant' />
+				<CorePage />
 				<RightSidebar />
 			</div>
 		</>
