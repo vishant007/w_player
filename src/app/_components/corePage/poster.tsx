@@ -1,5 +1,5 @@
 import React from 'react';
-import posterpic from '../../_assets/poster.png';
+import posterpic from '../../../../public/_assets/poster.png';
 import Image from 'next/image';
 
 export const Poster: React.FC = () => {

@@ -55,15 +55,15 @@ body {
 
 .rhap_progress-container .rhap_progress-bar {
 	@apply bg-white mb-2;
-	/*  blue background color */
+	/* This applies a blue background color */
 }
 
 .rhap_progress-container .rhap_progress-filled {
 	@apply bg-blue-700;
-	/* darker blue color*/
+	/* This applies a darker blue color for the filled part */
 }
 
 .rhap_progress-container .rhap_progress-indicator {
 	@apply bg-white;
-	/*  indicator to white */
+	/* This changes the indicator to white */
 }

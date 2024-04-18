@@ -1,5 +1,5 @@
 import type { Card } from './format';
-import img1 from '@/app/_assets/img1.jpg';
+
 import Image from 'next/image';
 
 const SongCard: React.FC<{ card: Card }> = ({ card }) => {
@@ -8,7 +8,7 @@ const SongCard: React.FC<{ card: Card }> = ({ card }) => {
 			<div className='relative overflow-hidden aspect-square rounded-2xl'>
 				<div className='transition-transform duration-300 hover:scale-110'>
 					<Image
-						src={img1}
+						src={card.imageUrl}
 						alt={card.title}
 						width={300}
 						height={300}

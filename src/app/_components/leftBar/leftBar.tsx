@@ -113,7 +113,7 @@ export default function Sidebar() {
 				</div>
 			</div>
 			{!isCollapsed && (
-				<div className='bg-[url(_assets/img1.jpg)] w-full h-56 bg-contain bg-center aspect-square transition-all duration-500 ease-in-out'></div>
+				<div className=' w-full h-56 bg-contain bg-center aspect-square transition-all duration-500 ease-in-out'></div>
 			)}
 		</div>
 	);
