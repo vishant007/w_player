@@ -48,7 +48,7 @@ export default function Sidebar() {
 		<div className='hidden md:flex w-[18vw] bg-bgp flex-col justify-between min-h-[88vh]'>
 			<div className='upper-box p-5 min-h-[50vh]'>
 				<div className='header flex flex-row justify-between items-center'>
-					<span className='wemsc-logo text-3xl 4k:text-6xl mb-2 font-extrabold text-indigo-700'>
+					<span className='wemsc-logo text-3xl 4k:text-6xl mb-2 font-extrabold text-white-700'>
 						W
 					</span>
 					<Burger className='icon hover:text-blue-600' />
@@ -94,7 +94,7 @@ export default function Sidebar() {
 					/>
 				</div>
 			</div>
-			<div className='bg-[url(_assets/coverSong.png)] w-full h-56 bg-contain  bg-center aspect-square'></div>
+			<div className='bg-[url(_assets/img1.jpg)] w-full h-56 bg-contain  bg-center aspect-square'></div>
 		</div>
 	);
 }

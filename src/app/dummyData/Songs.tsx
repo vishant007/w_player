@@ -5,56 +5,49 @@ export const trendingCards: Card[] = [
 		id: '1',
 		title: "Today's Hot Hits",
 		artist: 'Various Artists',
-		imageUrl: '_assets/img1.jpg', // Replace with actual image path
+		imageUrl: '_assets/img4.jpg',
 		isTrending: true,
 	},
 	{
 		id: '2',
-		title: 'land of rising sun',
-		artist: 'Woilon',
-		imageUrl: '/path/to/land-of-rising-sun-image.jpg', // Replace with actual image path
+		title: 'Bhayanak Atma',
+		artist: 'Nucleya',
+		imageUrl: '_assets/img2.jpg',
 		isTrending: true,
 	},
 	{
 		id: '3',
-		title: '流れ',
-		artist: 'Unknown Artist', // Replace with actual artist name
-		imageUrl: '/path/to/flow-image.jpg', // Replace with actual image path
+		title: 'Jadi Buti',
+		artist: 'Nucleya',
+		imageUrl: '_assets/img3.jpg',
 		isTrending: true,
 	},
 	{
 		id: '4',
-		title: 'Tickets to My Downfall',
-		artist: 'Machine Gun Kelly',
-		imageUrl: '/path/to/tickets-to-my-downfall-image.jpg', // Replace with actual image path
+		title: 'Lights',
+		artist: 'Nucleya',
+		imageUrl: '_assets/img5.jpg',
 		isTrending: true,
 	},
 	{
 		id: '1',
 		title: "Today's Hot Hits",
 		artist: 'Various Artists',
-		imageUrl: '/path/to/todays-hot-hits-image.jpg', // Replace with actual image path
+		imageUrl: '_assets/img1.jpg',
 		isTrending: true,
 	},
 	{
 		id: '2',
-		title: 'land of rising sun',
-		artist: 'Woilon',
-		imageUrl: '/path/to/land-of-rising-sun-image.jpg', // Replace with actual image path
+		title: 'Bhayanak Atma',
+		artist: 'Nucleya',
+		imageUrl: '_assets/img2.jpg',
 		isTrending: true,
 	},
 	{
 		id: '3',
-		title: '流れ',
-		artist: 'Unknown Artist', // Replace with actual artist name
-		imageUrl: '/path/to/flow-image.jpg', // Replace with actual image path
-		isTrending: true,
-	},
-	{
-		id: '4',
-		title: 'Tickets to My Downfall',
-		artist: 'Machine Gun Kelly',
-		imageUrl: '/path/to/tickets-to-my-downfall-image.jpg', // Replace with actual image path
+		title: 'Jadi Buti',
+		artist: 'Nucleya',
+		imageUrl: '_assets/img3.jpg',
 		isTrending: true,
 	},
 ];
