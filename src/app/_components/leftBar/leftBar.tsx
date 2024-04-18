@@ -53,13 +53,15 @@ export default function Sidebar() {
 
 	return (
 		<div
-			className={`md:flex ${
+			className={`hidden md:flex ${
 				isCollapsed ? 'w-[5vw]' : 'w-[18vw]'
-			} bg-bgp flex-col justify-between min-h-[88vh]`}
+			} bg-bgp flex-col justify-between min-h-[88vh] transition-all duration-500 ease-in-out  `}
 		>
 			<div
 				className={`upper-box p-5 ${
-					isCollapsed ? 'min-h-[100vh]' : 'min-h-[50vh]'
+					isCollapsed
+						? 'min-h-[100vh]'
+						: 'min-h-[50vh] transition-all duration-500 ease-in-out'
 				}`}
 			>
 				<div className='header flex flex-row justify-between items-center'>
@@ -71,7 +73,7 @@ export default function Sidebar() {
 						W
 					</span>
 					<Burger
-						className='icon hover:text-blue-600'
+						className='icon hover:text-blue-600  '
 						onClick={toggleCollapse}
 					/>
 				</div>
@@ -111,7 +113,7 @@ export default function Sidebar() {
 				</div>
 			</div>
 			{!isCollapsed && (
-				<div className='bg-[url(_assets/img1.jpg)] w-full h-56 bg-contain bg-center aspect-square'></div>
+				<div className='bg-[url(_assets/img1.jpg)] w-full h-56 bg-contain bg-center aspect-square transition-all duration-500 ease-in-out'></div>
 			)}
 		</div>
 	);
