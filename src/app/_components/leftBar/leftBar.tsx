@@ -1,3 +1,4 @@
+'use client';
 import { useState, memo, useCallback } from 'react';
 import { SvgIconProps } from '@mui/material';
 import Burger from '@mui/icons-material/MenuOpenRounded';
@@ -37,64 +38,81 @@ const HoverIcon = memo(
 				) : (
 					<OutlinedIcon className='icon' />
 				)}
-				<span className='icon-descriptor'>{descriptor}</span>
+				{descriptor && <span className='icon-descriptor'>{descriptor}</span>}
 			</div>
 		);
 	}
 );
 
 export default function Sidebar() {
+	const [isCollapsed, setIsCollapsed] = useState(false);
+
+	const toggleCollapse = useCallback(() => {
+		setIsCollapsed((prev) => !prev);
+	}, []);
+
 	return (
-		<div className='hidden md:flex w-[18vw] bg-bgp flex-col justify-between min-h-[88vh]'>
-			<div className='upper-box p-5 min-h-[50vh]'>
+		<div
+			className={`md:flex ${
+				isCollapsed ? 'w-[5vw]' : 'w-[18vw]'
+			} bg-bgp flex-col justify-between min-h-[88vh]`}
+		>
+			<div
+				className={`upper-box p-5 ${
+					isCollapsed ? 'min-h-[100vh]' : 'min-h-[50vh]'
+				}`}
+			>
 				<div className='header flex flex-row justify-between items-center'>
-					<span className='wemsc-logo text-3xl 4k:text-6xl mb-2 font-extrabold text-white-700'>
+					<span
+						className={`wemsc-logo text-3xl 4k:text-6xl mb-2 font-extrabold text-white-700 ${
+							isCollapsed ? 'hidden' : ''
+						}`}
+					>
 						W
 					</span>
-					<Burger className='icon hover:text-blue-600' />
+					<Burger
+						className='icon hover:text-blue-600'
+						onClick={toggleCollapse}
+					/>
 				</div>
-				<div className='features flex flex-col my-4'>
-					<div className='text-xs 4k:text-lg mb-2 font-light text-primary hover:scale-y-110 hover:text-white transition-all duration-500'>
-						FEATURES
-					</div>
+				<div className={`features flex flex-col my-4`}>
 					<HoverIcon
 						OutlinedIcon={HomeOutlined}
 						FilledIcon={Home}
-						descriptor='Home'
+						descriptor={!isCollapsed ? 'Home' : ''}
 					/>
 					<HoverIcon
 						OutlinedIcon={DiscoverOutlined}
 						FilledIcon={Discover}
-						descriptor='Discover'
+						descriptor={!isCollapsed ? 'Discover' : ''}
 					/>
 					<HoverIcon
 						OutlinedIcon={CollectionsOutlined}
 						FilledIcon={Collections}
-						descriptor='Collections'
+						descriptor={!isCollapsed ? 'Collections' : ''}
 					/>
 				</div>
-				<div className='library mb-4 flex flex-col'>
-					<div className='text-xs 4k:text-lg mb-2 font-light text-primary hover:scale-y-110 hover:text-white transition-all duration-500'>
-						LIBRARY
-					</div>
+				<div className={`library flex flex-col mb-4`}>
 					<HoverIcon
 						OutlinedIcon={DownloadOutlined}
 						FilledIcon={Download}
-						descriptor='Download'
+						descriptor={!isCollapsed ? 'Download' : ''}
 					/>
 					<HoverIcon
 						OutlinedIcon={FavouritesOutlined}
 						FilledIcon={Favourites}
-						descriptor='Favourites'
+						descriptor={!isCollapsed ? 'Favourites' : ''}
 					/>
 					<HoverIcon
 						OutlinedIcon={LocalFilesOutlined}
 						FilledIcon={LocalFiles}
-						descriptor='Local Files'
+						descriptor={!isCollapsed ? 'Local Files' : ''}
 					/>
 				</div>
 			</div>
-			<div className='bg-[url(_assets/img1.jpg)] w-full h-56 bg-contain  bg-center aspect-square'></div>
+			{!isCollapsed && (
+				<div className='bg-[url(_assets/img1.jpg)] w-full h-56 bg-contain bg-center aspect-square'></div>
+			)}
 		</div>
 	);
 }

@@ -9,7 +9,9 @@ const SongCard: React.FC<{ card: Card }> = ({ card }) => {
 				<div className='transition-transform duration-300 hover:scale-110'>
 					<Image
 						src={img1}
-						alt='img1'
+						alt={card.title}
+						width={300}
+						height={300}
 						className='aspect-square rounded-2xl hover:opacity-70 transition-all duration-300'
 					/>
 				</div>
