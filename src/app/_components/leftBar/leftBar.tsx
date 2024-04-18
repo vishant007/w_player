@@ -44,11 +44,6 @@ const HoverIcon = memo(
 );
 
 export default function Sidebar() {
-	const [sidebarVisible, setSidebarVisible] = useState(true);
-
-	const handleBurgerClick = useCallback(() => {
-		setSidebarVisible((prev) => !prev);
-	}, []);
 	return (
 		<div className='hidden md:flex w-[18vw] bg-bgp flex-col justify-between min-h-[88vh]'>
 			<div className='upper-box p-5 min-h-[50vh]'>
