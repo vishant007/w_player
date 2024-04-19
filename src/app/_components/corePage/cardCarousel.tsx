@@ -1,6 +1,6 @@
 'use client';
 import React, { useEffect, useRef, useState } from 'react';
-import SongCard from './songCard';
+import Card from './songCard';
 import type { CarouselProps } from './format';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
@@ -69,7 +69,7 @@ const CardCarousel: React.FC<CarouselProps> = ({ title, cards }) => {
 					className='flex overflow-x-auto md:w-[70vw] gap-[2vw] md:gap-[1.3vw] scrollbar-hide'
 				>
 					{cards.map((card) => (
-						<SongCard key={card.id} card={card} />
+						<Card key={card.id} card={card} />
 					))}
 				</div>
 				<div

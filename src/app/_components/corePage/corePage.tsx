@@ -12,9 +12,9 @@ export default function CorePage() {
 				<SearchBar />
 				<div className=''>
 					<Poster />
-					<CardCarousel title={`Hello , Vishant`} cards={trendingCards} />
+					{/* <CardCarousel title={`Hello , Vishant`} cards={trendingCards} /> */}
 
-					<CardCarousel title='New Releases For You' cards={newReleaseCards} />
+					{/* <CardCarousel title='New Releases For You' cards={newReleaseCards} /> */}
 				</div>
 			</div>
 		</div>

@@ -5,7 +5,7 @@ import ExpandMoreOutlinedIcon from '@mui/icons-material/ExpandMoreOutlined';
 
 export const ProfileComponent = ({ name }: { name: string }) => {
 	return (
-		<div className='flex flex-row justify-between items-center space-x-3 text-white mx-4 my-8'>
+		<div className='flex flex-row justify-between items-center space-x-3 text-white mx-4 my-10'>
 			<div className='flex flex-row items-center gap-4'>
 				<Image
 					src={profile}
