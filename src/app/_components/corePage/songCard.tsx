@@ -9,8 +9,10 @@ const Card: React.FC<{ card: Card }> = ({ card }) => {
 			<div className='relative overflow-hidden aspect-square rounded-2xl'>
 				<div className='transition-transform duration-300 hover:scale-105'>
 					<Image
-						src={img3}
-						alt='pic3'
+						src={card.imageUrl}
+						alt={card.title}
+						width={300}
+						height={300}
 						className='aspect-square rounded-2xl hover:opacity-70 transition-all duration-300'
 					/>
 				</div>
