@@ -1,5 +1,11 @@
 - UI created using NextJS and Tailwind CSS
 
+# Features:
+
+- Interactive and responsive
+- Integrated mp3 player
+- Added sidebar animations
+
 # Project Structure:
 
 - _assests: This folder contains all the necessary images and audio required throughout the project
