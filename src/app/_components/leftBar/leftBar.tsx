@@ -45,6 +45,9 @@ const HoverIcon = memo(function HoverIcon({
 		</div>
 	);
 });
+
+HoverIcon.displayName = 'HoverIcon';
+
 export default function Sidebar() {
 	const [isCollapsed, setIsCollapsed] = useState(false);
 
