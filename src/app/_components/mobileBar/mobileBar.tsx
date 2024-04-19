@@ -1,6 +1,7 @@
 import { CardList } from './cardList';
 import { ProfileComponent } from './profile';
 import { recentlyPlayed } from '../../../dummyData/recentlyPlayed';
+import { MyPlaylist } from '../../../dummyData/myPlaylist';
 import { PlayListButton } from './playlist';
 
 interface MobileSidebarProps {
@@ -18,7 +19,7 @@ const MobileSidebar: React.FC<MobileSidebarProps> = ({ isVisible }) => {
 				<ProfileComponent name='Vishant Shah' />
 				<div className='div'>
 					<CardList cards={recentlyPlayed} sectionTitle='Recently Played' />
-					<CardList cards={recentlyPlayed} sectionTitle='My Playlist' />
+					<CardList cards={MyPlaylist} sectionTitle='My Playlist' />
 				</div>
 			</div>
 
