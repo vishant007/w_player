@@ -1,6 +1,6 @@
-import { Card } from '../_components/corePage/format';
+import { Card } from '../../src/app/_components/corePage/format';
 
-export const trendingCards: Card[] = [
+export const newReleaseCards: Card[] = [
 	{
 		id: '1',
 		title: "Today's Hot Hits",
