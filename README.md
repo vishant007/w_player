@@ -16,7 +16,7 @@
 # Demo Video: 
 
 
-# To Run Your Machine:
+# To Run On Your Machine:
 
 ```bash
 
@@ -25,4 +25,4 @@ npm run dev
 
 ```
 
-
+- Happy Hacking!!
