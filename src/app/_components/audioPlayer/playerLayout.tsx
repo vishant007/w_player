@@ -42,10 +42,9 @@ const AudioPlayerLayout = ({ songUrl }: { songUrl: string }) => {
 
 	return (
 		<div className='flex flex-row justify-between items-center md:px-4 text-white w-full'>
-			{/*left side component*/}
 			<div className='flex flex-row gap-5 md:px-5 justify-between items-start'>
 				<div className='md:hidden'>
-					{/*show only on mobile*/}
+					{/*mobile*/}
 					<Image
 						src={songImg}
 						alt='profile'
@@ -67,11 +66,11 @@ const AudioPlayerLayout = ({ songUrl }: { songUrl: string }) => {
 					</div>
 				</div>
 			</div>
-			{/*center component*/}
+			{/*center*/}
 			<div className='flex-1'>
 				<AudioPlayerComponent songUrl={songUrl} />
 			</div>
-			{/*right side component*/}
+			{/*right*/}
 			<div className='xs:max-sm:hidden flex flex-row justify-center items-center gap-3'>
 				<div className='group' onClick={handleVolumeClick}>
 					{volume === 0 ? (
