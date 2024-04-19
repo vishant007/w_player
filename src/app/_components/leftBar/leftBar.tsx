@@ -65,7 +65,7 @@ export default function Sidebar() {
 			>
 				<div className=' header flex flex-row justify-between items-center'>
 					<span
-						className={`wemsc-logo text-3xl 4k:text-6xl mb-2 font-extrabold text-white-700 ${
+						className={`wemsc-logo text-3xl  mb-2 font-extrabold text-white-700 ${
 							isCollapsed ? 'hidden' : ''
 						}`}
 					>
@@ -77,7 +77,7 @@ export default function Sidebar() {
 					/>
 				</div>
 				<div className={`features flex flex-col my-4`}>
-					<div className='text-xs 4k:text-lg mb-2  font-light text-primary hover:scale-y-110 hover:text-white transition-all duration-500'>
+					<div className='text-xs   font-light text-primary hover:scale-y-110 hover:text-white transition-all duration-500'>
 						{!isCollapsed ? 'FEATURES' : ''}
 					</div>
 					<HoverIcon
@@ -97,7 +97,7 @@ export default function Sidebar() {
 					/>
 				</div>
 				<div className={`library flex flex-col mb-4`}>
-					<div className='text-xs 4k:text-lg mb-2 font-light text-primary hover:scale-y-110 hover:text-white transition-all duration-500'>
+					<div className='text-xs mb-2 font-light text-primary hover:scale-y-110 hover:text-white transition-all duration-500'>
 						{!isCollapsed ? 'LIBRARY' : ''}
 					</div>
 					<HoverIcon

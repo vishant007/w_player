@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import profilePic from '../../../../public/_assets/profile.png';
-import NotificationsOutlinedIcon from '@mui/icons-material/NotificationsOutlined';
-import ExpandMoreOutlinedIcon from '@mui/icons-material/ExpandMoreOutlined';
+
 import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
 import useSidebarStore from './sidebarlayout';
 

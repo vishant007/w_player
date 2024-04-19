@@ -14,7 +14,6 @@ const config: Config = {
 			lg: '1024px',
 			xl: '1280px',
 			'2xl': '1536px',
-			'4k': '2560px',
 		},
 		extend: {
 			backgroundImage: {

@@ -55,8 +55,8 @@ const AudioPlayerLayout = ({ songUrl }: { songUrl: string }) => {
 					/>
 				</div>
 				<div className='flex flex-col'>
-					<div className='text-sm 4k:text-2xl font-bold'>Lights</div>
-					<div className='text-xs 4k:text-xl'>Nucleya</div>
+					<div className='text-sm  font-bold'>Lights</div>
+					<div className='text-xs '>Nucleya</div>
 				</div>
 				<div className='icon-box flex flex-row xs:max-sm:hidden'>
 					<div className='group'>

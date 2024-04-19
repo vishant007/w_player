@@ -14,7 +14,7 @@ export const ProfileComponent = ({ name }: { name: string }) => {
 					height={50}
 					className='rounded-full aspect-square'
 				/>
-				<div className='text-xs 4k:text-lg text-white hover:text-blue-600 font-bold cursor-pointer hover:scale-110 transition-all duration-500 break-words max-w-[5.5vw]'>
+				<div className='text-xs text-white hover:text-blue-600 font-bold cursor-pointer hover:scale-110 transition-all duration-500 break-words max-w-[5.5vw]'>
 					{name}
 				</div>
 			</div>

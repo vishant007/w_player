@@ -1,5 +1,5 @@
 import type { Card } from './format';
-import img3 from '../../../../public/_assets/img3.jpg';
+
 import Image from 'next/image';
 
 const Card: React.FC<{ card: Card }> = ({ card }) => {
@@ -7,7 +7,7 @@ const Card: React.FC<{ card: Card }> = ({ card }) => {
 		<div className='flex-shrink-0 w-[45vw] md:w-[15vw] flex flex-col gap-2 cursor-pointer hover:text-blue-600 transition-all duration-300'>
 			{/* <img className="w-full" src={card.imageUrl} alt={card.title} /> */}
 			<div className='relative overflow-hidden aspect-square rounded-2xl'>
-				<div className='transition-transform duration-300 hover:scale-105'>
+				<div className='transition-transform duration-300 hover:scale-110'>
 					<Image
 						src={card.imageUrl}
 						alt={card.title}

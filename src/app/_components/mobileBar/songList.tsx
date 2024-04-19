@@ -9,11 +9,11 @@ export interface CardProps {
 
 export const Card: React.FC<CardProps> = ({ title, subtitle, image, time }) => {
 	return (
-		<div className='card flex flex-row items-center text-white my-2 text-xs 4k:text-base  hover:text-blue-600 transition-all duration-300 hover:cursor-pointer'>
+		<div className='card flex flex-row items-center text-white my-2 text-xs  hover:text-blue-600 transition-all duration-300 hover:cursor-pointer'>
 			<Image
 				src={image}
 				alt={'alt'}
-				className='break-words mr-4 4k:w-[2vw] aspect-square'
+				className=' mr-4 aspect-square'
 				width={32}
 				height={32}
 			/>

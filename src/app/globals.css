@@ -42,11 +42,11 @@ body {
 }
 
 .icon {
-	@apply text-white 4k:text-4xl text-2xl group-hover:text-blue-600 transition duration-300 cursor-pointer;
+	@apply text-white  text-2xl group-hover:text-blue-600 transition duration-300 cursor-pointer;
 }
 
 .icon-descriptor {
-	@apply text-sm 4k:text-xl text-secondary group-hover:text-blue-600 transition duration-300 cursor-pointer;
+	@apply text-sm  text-secondary group-hover:text-blue-600 transition duration-300 cursor-pointer;
 }
 
 .icon-box {

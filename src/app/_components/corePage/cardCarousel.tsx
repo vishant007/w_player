@@ -50,7 +50,7 @@ const CardCarousel: React.FC<CarouselProps> = ({ title, cards }) => {
 		<div className='flex flex-col my-4'>
 			<div className='flex flex-row justify-between items-center mb-2 md:mb-4 md:px-6'>
 				<div className='md:text-2xl font-bold'>{title}</div>
-				<div className='text-sm md:text-base 4k:text-xl text-primary hover:text-white transition-all duration-300 cursor-pointer'>
+				<div className='text-sm md:text-base  text-primary hover:text-white transition-all duration-300 cursor-pointer'>
 					see all
 				</div>
 			</div>

@@ -30,10 +30,10 @@ const SearchBar: React.FC = () => {
 				<InputBase
 					startAdornment={
 						<InputAdornment position='start'>
-							<SearchIcon className='text-secondary text-2xl 4k:text-4xl' />
+							<SearchIcon className='text-secondary text-2xl ' />
 						</InputAdornment>
 					}
-					className='flex-grow rounded-full text-sm 4k:text-xl bg-white text-primary px-4 py-2'
+					className='flex-grow rounded-full text-sm  bg-white text-primary px-4 py-2'
 					placeholder='Search for artists, songs, or albums'
 					inputProps={{ 'aria-label': 'search', className: 'my-auto' }}
 				/>
