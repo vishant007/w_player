@@ -15,6 +15,8 @@
 
 # Demo Video: 
 
+https://github.com/vishant007/w_player/assets/64253459/22905a8a-75e7-4ea9-b583-ad811db050a3
+
 
 # To Run On Your Machine:
 
