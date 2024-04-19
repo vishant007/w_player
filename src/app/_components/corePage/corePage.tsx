@@ -2,8 +2,8 @@ import React from 'react';
 import SearchBar from './searchBar';
 import { Poster } from './poster';
 import CardCarousel from './cardCarousel';
-import { trendingCards } from '../../dummyData/Songs';
-import { newReleaseCards } from '../../dummyData/newReleases';
+import { trendingCards } from '../../../dummyData/Songs';
+import { newReleaseCards } from '../../../dummyData/newReleases';
 
 export default function CorePage() {
 	return (
