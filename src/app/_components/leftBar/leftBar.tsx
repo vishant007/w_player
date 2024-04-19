@@ -21,28 +21,30 @@ type HoverIconProps = {
 	descriptor: string;
 };
 
-const HoverIcon = memo(
-	({ OutlinedIcon, FilledIcon, descriptor, ...props }: HoverIconProps) => {
-		const [isHovered, setIsHovered] = useState(false);
+const HoverIcon = memo(function HoverIcon({
+	OutlinedIcon,
+	FilledIcon,
+	descriptor,
+	...props
+}: HoverIconProps) {
+	const [isHovered, setIsHovered] = useState(false);
 
-		return (
-			<div
-				className='group icon-box'
-				onMouseEnter={() => setIsHovered(true)}
-				onMouseLeave={() => setIsHovered(false)}
-				{...props}
-			>
-				{isHovered ? (
-					<FilledIcon className='icon' />
-				) : (
-					<OutlinedIcon className='icon' />
-				)}
-				<span className='icon-descriptor'>{descriptor}</span>
-			</div>
-		);
-	}
-);
-
+	return (
+		<div
+			className='group icon-box'
+			onMouseEnter={() => setIsHovered(true)}
+			onMouseLeave={() => setIsHovered(false)}
+			{...props}
+		>
+			{isHovered ? (
+				<FilledIcon className='icon' />
+			) : (
+				<OutlinedIcon className='icon' />
+			)}
+			<span className='icon-descriptor'>{descriptor}</span>
+		</div>
+	);
+});
 export default function Sidebar() {
 	const [isCollapsed, setIsCollapsed] = useState(false);
 
