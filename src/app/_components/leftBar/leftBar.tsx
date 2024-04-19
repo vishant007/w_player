@@ -112,9 +112,15 @@ export default function Sidebar() {
 					/>
 				</div>
 			</div>
-			{!isCollapsed && (
-				<div className=' w-full h-56 bg-contain bg-center aspect-square transition-all duration-500 ease-in-out'></div>
-			)}
+			<div className='lower box max-h-[20vh]'>
+				{!isCollapsed && (
+					<img
+						src={'/_assets/img1.jpg'}
+						alt='Image Description'
+						className='w-full h-56 bg-contain bg-center aspect-square'
+					/>
+				)}
+			</div>
 		</div>
 	);
 }

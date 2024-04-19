@@ -5,7 +5,7 @@ export const newReleaseCards: Card[] = [
 		id: '1',
 		title: "Today's Hot Hits",
 		artist: 'Various Artists',
-		imageUrl: '/_assets/img4.jpg',
+		imageUrl: '/_assets/img1.jpg',
 		isTrending: true,
 	},
 	{
@@ -19,7 +19,7 @@ export const newReleaseCards: Card[] = [
 		id: '3',
 		title: 'Jadi Buti',
 		artist: 'Nucleya',
-		imageUrl: '/_assets/img3.jpg',
+		imageUrl: '/_assets/img4.jpg',
 		isTrending: true,
 	},
 	{
@@ -47,7 +47,7 @@ export const newReleaseCards: Card[] = [
 		id: '3',
 		title: 'Jadi Buti',
 		artist: 'Nucleya',
-		imageUrl: '/_assets/img3.jpg',
+		imageUrl: '/_assets/img4.jpg',
 		isTrending: true,
 	},
 ];

@@ -19,7 +19,7 @@ export const trendingCards: Card[] = [
 		id: '3',
 		title: 'Jadi Buti',
 		artist: 'Nucleya',
-		imageUrl: '/_assets/img3.jpg',
+		imageUrl: '/_assets/img4.jpg',
 		isTrending: true,
 	},
 	{
@@ -47,7 +47,7 @@ export const trendingCards: Card[] = [
 		id: '3',
 		title: 'Jadi Buti',
 		artist: 'Nucleya',
-		imageUrl: '/_assets/img3.jpg',
+		imageUrl: '/_assets/img4.jpg',
 		isTrending: true,
 	},
 ];
