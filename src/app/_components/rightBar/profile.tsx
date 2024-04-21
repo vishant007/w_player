@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import profile from '../../../../public/_assets/profile.png';
+import profile from '../../../../public/_assets/profile.webp';
 import NotificationsOutlinedIcon from '@mui/icons-material/NotificationsOutlined';
 import ExpandMoreOutlinedIcon from '@mui/icons-material/ExpandMoreOutlined';
 

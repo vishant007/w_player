@@ -13,6 +13,7 @@ const Card: React.FC<{ card: Card }> = ({ card }) => {
 						alt={card.title}
 						width={300}
 						height={300}
+						loading='eager'
 						className='aspect-square rounded-2xl hover:opacity-70 transition-all duration-300'
 					/>
 				</div>

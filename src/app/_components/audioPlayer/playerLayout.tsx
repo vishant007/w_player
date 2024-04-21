@@ -12,7 +12,7 @@ import SharingIcon from '@mui/icons-material/ShareRounded';
 import FavouritesOutlined from '@mui/icons-material/FavoriteBorderRounded';
 import AddBoxRounded from '@mui/icons-material/AddBoxRounded';
 import Image from 'next/image';
-import songImg from '../../../../public/_assets/img1.jpg';
+import songImg from '../../../../public/_assets/img1.webp';
 
 const AudioPlayerLayout = ({ songUrl }: { songUrl: string }) => {
 	const player: any = React.useRef(null);

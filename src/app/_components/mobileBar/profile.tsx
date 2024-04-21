@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import profilePic from '../../../../public/_assets/profile.png';
+import profilePic from '../../../../public/_assets/profile.webp';
 
 import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
 import useSidebarStore from './sidebarlayout';

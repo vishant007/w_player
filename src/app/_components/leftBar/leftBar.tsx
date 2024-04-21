@@ -125,7 +125,7 @@ export default function Sidebar() {
 			<div className='lower box max-h-[33vh]'>
 				{!isCollapsed && (
 					<img
-						src={'/_assets/img1.jpg'}
+						src={'/_assets/img1.webp'}
 						alt='Image Description'
 						className='w-full h-41 bg-contain bg-center aspect-square'
 					/>

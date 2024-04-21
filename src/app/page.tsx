@@ -3,7 +3,6 @@ import CorePage from './_components/corePage/corePage';
 import Player from './_components/audioPlayer/player';
 import RightSidebar from './_components/rightBar/rightBar';
 import Sidebar from './_components/leftBar/leftBar';
-import Head from 'next/head';
 import useSidebarStore from './_components/mobileBar/sidebarlayout';
 import MobileSidebar from './_components/mobileBar/mobileBar';
 
