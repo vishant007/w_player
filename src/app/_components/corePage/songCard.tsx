@@ -14,6 +14,7 @@ const Card: React.FC<{ card: Card }> = ({ card }) => {
 						width={300}
 						height={300}
 						className='aspect-square rounded-2xl hover:opacity-70 transition-all duration-300'
+						loading='eager'
 					/>
 				</div>
 			</div>
