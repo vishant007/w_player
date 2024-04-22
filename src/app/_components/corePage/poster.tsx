@@ -20,13 +20,7 @@ export const Poster: React.FC = () => {
 				</div>
 			</div>
 			<div className='image xs:max-sm:w-[100vw] '>
-				<Image
-					src={posterpic}
-					alt='hero'
-					width={800}
-					height={600}
-					loading='eager'
-				/>
+				<Image src={posterpic} alt='hero' loading='eager' />
 			</div>
 		</div>
 	);
